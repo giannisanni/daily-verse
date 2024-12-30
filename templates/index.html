@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Verse & Affirmation</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Daily Bible Verse & Affirmation</h1>
+            <div class="date" id="currentDate"></div>
+        </header>
+        
+        <main>
+            <section class="verse-section">
+                <h2>Verse of Hope</h2>
+                <div class="loading" id="loading">Loading today's verse...</div>
+                <div class="error" id="error" style="display: none;"></div>
+                <blockquote class="verse" id="verse">
+                    <!-- Verse will be inserted here -->
+                </blockquote>
+                <cite id="verseReference"></cite>
+            </section>
+
+            <div class="navigation">
+                <button id="verseBtn" class="nav-button active">Verse</button>
+                <button id="interpretationBtn" class="nav-button">Interpretation</button>
+                <button id="prayerBtn" class="nav-button">Prayer</button>
+            </div>
+
+            <section class="interpretation-section" style="display: none;">
+                <h2>Interpretation</h2>
+                <div id="interpretation">
+                    <!-- Interpretation will be inserted here -->
+                </div>
+            </section>
+
+            <section class="prayer-section" style="display: none;">
+                <h2>Prayer/Affirmation</h2>
+                <div class="prayer" id="prayer">
+                    <!-- Prayer will be inserted here -->
+                </div>
+            </section>
+
+            <div class="actions">
+                <button id="refreshVerse" class="refresh-button">Get New Verse</button>
+            </div>
+        </main>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

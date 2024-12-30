@@ -1,0 +1,149 @@
+body {
+    font-family: 'Georgia', serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #343a40;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 2.5em;
+}
+
+.date {
+    color: #6c757d;
+    font-style: italic;
+    margin-bottom: 30px;
+}
+
+main {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+h2 {
+    color: #2c3e50;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.verse-section blockquote {
+    font-size: 1.25em;
+    font-style: italic;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-left: 5px solid #007bff;
+    border-radius: 4px;
+}
+
+cite {
+    display: block;
+    color: #6c757d;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: right;
+}
+
+.interpretation-section p,
+.prayer-section p {
+    margin-bottom: 15px;
+    line-height: 1.8;
+}
+
+.loading {
+    color: #666;
+    font-style: italic;
+    margin: 20px 0;
+}
+
+.error {
+    color: #dc3545;
+    background-color: #f8d7da;
+    padding: 10px;
+    border-radius: 4px;
+    margin: 20px 0;
+}
+
+.actions {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.refresh-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.refresh-button:hover {
+    background-color: #0056b3;
+}
+
+.refresh-button:active {
+    background-color: #004080;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.nav-button {
+    background-color: #e9ecef;
+    color: #495057;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.nav-button:hover {
+    background-color: #dee2e6;
+}
+
+.nav-button.active {
+    background-color: #007bff;
+    color: white;
+}
+
+.nav-button.active:hover {
+    background-color: #0056b3;
+}
